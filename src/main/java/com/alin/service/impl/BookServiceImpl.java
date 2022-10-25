@@ -23,6 +23,7 @@ public class BookServiceImpl extends ServiceImpl<BookDao, Books> implements IBoo
     public List<Books> getByCondition(String condition) {
         System.out.println("test1");
         System.out.println("test2");
+        System.out.println("test3");
 
         LambdaQueryWrapper<Books> lqw=new LambdaQueryWrapper();
         lqw.like(condition!=null,Books::getName,condition);
