@@ -28,6 +28,7 @@ public class BookServiceImpl extends ServiceImpl<BookDao, Books> implements IBoo
         System.out.println("test5");
         System.out.println("push test");
         System.out.println("push test2");
+        System.out.println("pull test");
 
         LambdaQueryWrapper<Books> lqw=new LambdaQueryWrapper();
         lqw.like(condition!=null,Books::getName,condition);
